@@ -1,0 +1,68 @@
+/* Photographic essays use the source photographs at their complete aspect ratios. */
+.photography-detail{padding:0 7%;max-width:1700px;margin-inline:auto}
+.photography-detail .project-topline{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:35px 0;color:#97a59a;font-size:.8rem;line-height:1.6}
+.photography-detail .back-link{font-size:.875rem}
+.photo-masthead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9%;align-items:center;padding:35px 0 95px}
+.photography-detail .eyebrow{font-size:.75rem;line-height:1.7;letter-spacing:1.2px;color:#94a799}
+.photo-introduction h1{font-family:var(--serif);font-size:clamp(45px,5.7vw,90px);font-weight:400;line-height:1.08;letter-spacing:-2px;margin:20px 0 30px;max-width:600px}
+.photo-note{font-family:var(--serif);font-size:1.5rem;line-height:1.7;color:#d9ded4;margin:0 0 22px}
+.photo-description{font-size:1rem;line-height:2;color:#aebbb0;margin:0;max-width:540px}
+.photo-introduction dl{margin:30px 0}
+.photo-introduction dt{font-size:.75rem;color:#8aa493;margin-bottom:10px}
+.photo-introduction dd{font-size:.875rem;line-height:1.8;color:#b8c5bb}
+.photo-chapter-links{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:28px}
+.photo-chapter-links button{color:#c5d3c7;border:0;border-bottom:1px solid #748578;background:transparent;padding:8px 0;font-size:.875rem;line-height:1.8;text-align:left;cursor:pointer}
+.photo-chapter-links button:hover{color:#fff;border-color:#e0e7dc}
+.photography-detail .photo-figure{margin:0;min-width:0;background:transparent;border:0;box-shadow:none}
+.photography-detail .photo-figure .image-zoom{display:block;width:100%;height:auto;padding:0;overflow:visible;background:transparent;border:0;box-shadow:none}
+.photography-detail .photo-figure .image-zoom img{display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;padding:0;background:transparent;filter:none;box-shadow:none}
+.photography-detail .photo-figure .image-zoom>span{font-size:.75rem;padding:8px 10px;background:#0a100ccc}
+.photography-detail .photo-figure figcaption{display:block;font-size:.75rem;color:#8d9b91;line-height:1.8;margin-top:14px;letter-spacing:0}
+.photo-opening{width:100%;max-width:510px;justify-self:end}
+.photography-detail .photo-opening .photo-figure .image-zoom img{max-height:80svh;width:auto;max-width:100%;margin-inline:auto;object-position:center}
+.photo-chapter{padding-top:30px;margin-bottom:110px;scroll-margin-top:30px}
+.photo-chapter-heading{display:grid;grid-template-columns:1fr 1fr;gap:9%;padding-top:35px;margin-bottom:55px;border-top:1px solid var(--line)}
+.photo-chapter-heading h2{font-family:var(--serif);font-size:clamp(28px,3vw,43px);font-weight:400;line-height:1.5;margin:18px 0 24px;color:#e0e5dc}
+.photo-chapter-heading>p{font-size:1rem;line-height:2;color:#aebbb0;margin:0}
+.photo-camera{font-size:.8rem;letter-spacing:1px;color:#8da695;line-height:1.8}
+.photo-sequence{display:flex;flex-direction:column;gap:70px}
+.photo-spread{display:grid;grid-template-columns:var(--photo-columns);gap:30px;align-items:start}
+.photo-spread.spread-1{width:62%;margin-inline:auto}
+.photo-spread.spread-1:has(.landscape){width:100%}
+.photo-decisive-moments #photo-chapter-1 .spread-1{margin-left:9%;margin-right:auto;width:50%}
+.photo-light-time-her .photo-masthead{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:12%}
+.photo-light-time-her .photo-introduction{order:2}
+.photo-light-time-her .photo-opening{order:1;justify-self:start}
+.photo-light-time-her .photo-introduction h1{font-style:italic}
+.photo-closing{border-top:1px solid var(--line);padding:45px 0;display:grid;grid-template-columns:1fr 1fr;gap:9%;margin-bottom:30px}
+.photo-closing h2{font-family:var(--serif);font-size:1.75rem;font-weight:400;line-height:1.7;margin:0;color:#dce2d8}
+.photo-closing p{font-size:1rem;line-height:2;margin:0;color:#aebbb0}
+@media(max-width:1000px){
+ .photo-masthead{gap:7%}.photo-light-time-her .photo-masthead{gap:7%}
+ .photo-introduction h1{font-size:clamp(42px,6vw,68px)}
+ .photo-note{font-size:1.25rem}
+ .photo-spread{gap:22px}.photo-sequence{gap:50px}
+}
+@media(max-width:680px){
+ .photography-detail{padding:0 6%}
+ .photography-detail .project-topline{display:grid;grid-template-columns:1fr;gap:10px;padding:25px 0}
+ .photography-detail .project-topline>span:last-child{display:none}
+ .photo-masthead,.photo-light-time-her .photo-masthead{grid-template-columns:1fr;gap:35px;padding:20px 0 60px}
+ .photo-light-time-her .photo-introduction{order:0}.photo-light-time-her .photo-opening{order:1}
+ .photo-introduction h1{font-size:clamp(45px,12vw,65px);letter-spacing:-1px}
+ .photo-opening{justify-self:center;width:90%;max-width:420px}
+ .photo-light-time-her .photo-opening{justify-self:center}
+ .photography-detail .photo-opening .photo-figure .image-zoom img{max-height:none;width:100%}
+ .photo-chapter{margin-bottom:65px;padding-top:15px;scroll-margin-top:20px}
+ .photo-chapter-heading{grid-template-columns:1fr;gap:20px;padding-top:25px;margin-bottom:35px}
+ .photo-chapter-heading h2{font-size:1.75rem;margin:14px 0 18px}
+ .photo-sequence{gap:38px}
+ .photo-spread{gap:14px}
+ .photo-spread.spread-3{grid-template-columns:1fr}
+ .photo-spread.spread-3>.photo-figure{max-width:420px;width:90%;justify-self:center}
+ .photo-spread.spread-1,.photo-decisive-moments #photo-chapter-1 .spread-1{width:90%;margin-inline:auto}
+ .photo-spread.spread-1:has(.landscape){width:100%}
+ .photography-detail .photo-figure figcaption{font-size:.75rem;margin-top:10px}
+ .photo-closing{grid-template-columns:1fr;gap:20px;padding:30px 0}
+}
+@media(prefers-reduced-motion:reduce){.photography-detail,.photography-detail .image-zoom img{animation:none;transition:none}}

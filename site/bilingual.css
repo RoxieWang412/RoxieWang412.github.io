@@ -1,0 +1,41 @@
+.site-header{gap:24px}
+.site-header>nav{margin-left:auto;font-size:.875rem}
+.language-switch{display:flex;align-items:center;gap:3px;flex-shrink:0;padding-left:18px;border-left:1px solid var(--line)}
+.language-switch button{min-width:44px;min-height:36px;padding:7px 9px;background:transparent;border:0;border-bottom:1px solid transparent;color:#8e9e94;font:inherit;font-size:.875rem;line-height:1.5;cursor:pointer}
+.language-switch button[aria-pressed=true]{color:#e1e9dd;border-bottom-color:#a3b29f}
+.language-switch button:hover{color:#fff}
+.language-switch button:focus-visible{outline:2px solid #b6cab9;outline-offset:3px}
+.locale-loading{font-size:1rem;line-height:1.8;padding:60px 7%;color:#aebbb1}
+html[lang=en] .profile-information h3{font-size:clamp(25px,2.5vw,34px)}
+html[lang=en] .profile-identity h2{letter-spacing:0}
+html[lang=en] .keyword-row>span{font-size:clamp(17px,1.8vw,24px);line-height:1.25}
+html[lang=en] .fragment-caption em{line-height:1.75}
+html[lang=en] .method-node .node-copy h3{font-size:1.25rem;line-height:1.5}
+html[lang=en] .photo-note{font-size:1.35rem;line-height:1.6}
+html[lang=en] .design-type-tabs button{font-size:.8rem;line-height:1.6}
+html[lang=en] .ai-masthead{column-gap:4%}
+html[lang=en] .method-overview strong{font-size:.8rem;line-height:1.5}
+@media(max-width:900px){.site-header{gap:15px}.site-header>nav{gap:18px}.language-switch{padding-left:12px}}
+@media(max-width:680px){
+ .site-header,.home-active .site-header{display:grid;grid-template-columns:1fr auto;height:auto;min-height:105px;padding-top:15px;padding-bottom:12px;gap:10px 15px}
+ .site-header>.brand{grid-column:1;grid-row:1}
+ .site-header>.language-switch{grid-column:2;grid-row:1;border:0;padding-left:0}
+ .site-header>nav{grid-column:1/-1;grid-row:2;margin:0;gap:26px;justify-content:flex-start;font-size:.875rem}
+ .language-switch button{min-height:36px}
+ html[lang=en] .keyword-row{gap:10px;flex-wrap:wrap;justify-content:flex-start}
+ html[lang=en] .keyword-row>span{font-size:19px;flex-basis:calc(50% - 10px)}
+ html[lang=en] .ai-statement h2{font-size:22px;line-height:1.6}
+ html[lang=en] .method-title h1{font-size:clamp(50px,14vw,95px)}
+ html[lang=en] .photo-note{font-size:1.2rem}
+}
+html[lang=en] .type-banner h1{font-size:clamp(64px,7.5vw,112px);letter-spacing:-3px;gap:20px}
+html[lang=en] .type-banner h1 span{font-size:18px;letter-spacing:.5px}
+html[lang=en] .method-title h1{font-size:clamp(52px,6vw,90px);letter-spacing:-3px}
+html[lang=en] .skill-node strong{max-width:145px;line-height:1.5;white-space:normal}
+@media(max-width:680px){
+ html[lang=en] .method-title{align-items:flex-start;flex-direction:column;gap:25px}
+ html[lang=en] .method-title h1{font-size:clamp(50px,12vw,72px);line-height:1.05}
+ html[lang=en] .type-banner h1{font-size:76px;gap:20px}
+ html[lang=en] .type-banner h1 span{font-size:18px}
+ html[lang=en] .skill-node strong{max-width:95px}
+}

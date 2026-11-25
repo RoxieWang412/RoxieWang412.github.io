@@ -1,0 +1,19 @@
+Roxie’s World — GitHub Pages 發布檔案
+
+網站內容
+• site/ 包含完整中英文網站、原圖素材、影片及手機版樣式。
+• 使用相對路徑，可部署在 username.github.io 或 username.github.io/專案名稱/。
+• 已保留語言切換、分類瀏覽、圖片放大和影片選集。
+• 首頁手機字級已調整，標題可完整顯示。
+
+發布設定
+1. 在你的 GitHub 帳號建立公開 repository，將本資料夾的完整內容加入 main 分支。
+2. 保留 .github/workflows/pages.yml；它包含自動發布設定。
+3. 到 Settings → Pages → Build and deployment → Source，選擇 GitHub Actions。
+4. 執行 Publish Roxie’s World workflow。GitHub 完成發布後會提供實際 github.io 網址。
+
+此檔案包尚未綁定 GitHub 帳號；公開網址必須待帳號授權與部署完成後才會產生。
+不需要購買網域，也不需要後端服務。
+
+English
+The site/ folder is the complete bilingual static website, including images, videos and responsive styles. Keep .github/workflows/pages.yml when adding this package to the main branch of a public repository. Set Settings → Pages → Source to GitHub Actions, then run the Publish Roxie’s World workflow. The deployment output supplies the real github.io URL. No published URL is claimed by this offline package.

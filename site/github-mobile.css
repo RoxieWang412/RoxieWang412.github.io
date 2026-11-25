@@ -1,0 +1,15 @@
+/* Keep the complete cover lettering visible on phone screens. */
+@media (max-width: 680px) {
+  .cover-title h1.world-title {
+    font-size: clamp(56px, 18vw, 110px);
+    width: 100%;
+  }
+  .cover-title h1.world-title .world-line {
+    font-size: 1.1em;
+    margin-left: 6%;
+    letter-spacing: -.045em;
+  }
+  .cover-title h1.world-title .name-line {
+    letter-spacing: -.04em;
+  }
+}

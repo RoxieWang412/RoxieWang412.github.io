@@ -1,0 +1,144 @@
+/* Artwork sits directly on the site, with its own aspect ratio and alpha. */
+#fragment-stage .fragment,#fragment-stage .fragment-picture,#fragment-stage .fragment-picture img{background:transparent;border:0;box-shadow:none}
+#fragment-stage .fragment-picture img{padding:0;object-fit:contain}
+#fragment-stage .fragment-picture{overflow:visible}
+#fragment-stage .fragment-picture i{background:none;border:0;color:#b0c6b7}
+#main.composed-detail .image-zoom{width:fit-content;max-width:100%;margin-inline:auto;background:transparent;border:0;box-shadow:none;overflow:visible}
+#main.composed-detail .image-zoom>img{display:block;width:auto;max-width:100%;height:auto;max-height:min(90svh,1000px);margin-inline:auto;padding:0;object-fit:contain;background:transparent;border:0;box-shadow:none}
+#main.composed-detail .art-gallery,#main.composed-detail .art-gallery figure,#main.composed-detail .chapter-images,#main.composed-detail .chapter-images figure{background:transparent;border:0;box-shadow:none}
+#main.composed-detail .chapter-images .image-zoom>img{height:auto;min-height:0;max-height:650px;padding:0}
+#main.composed-detail .chapter-images.images-1 .image-zoom>img{max-height:850px}
+#main.composed-detail .art-gallery.composed-gallery{align-items:start}
+#main.composed-detail.layout-campaign .composed-gallery .gallery-figure:first-child{width:100%;grid-column:1/-1;margin:0}
+#main.composed-detail.layout-campaign .composed-gallery .image-zoom>img{width:100%;height:auto;max-height:none}
+#main.composed-detail.layout-packaging .composed-gallery{grid-template-columns:1fr}
+#main.composed-detail.layout-packaging .composed-gallery .gallery-figure{grid-column:1/-1;margin:0}
+#main.composed-detail.layout-packaging .composed-gallery .image-zoom>img{width:100%;height:auto;max-height:none}
+#main.composed-detail.layout-packaging .chapter-images .image-zoom{background:transparent}
+#main.composed-detail.layout-typographic .type-banner>img{padding:0;background:transparent;border:0;box-shadow:none}
+#main.composed-detail .image-zoom>span{background:#0c1812c9;padding:6px 8px;font-size:6px;bottom:8px;right:8px}
+#main.composed-detail .layout-brand .gallery-figure{background:transparent}
+#main.composed-detail.layout-editorial .gallery-bakery{margin-top:0}
+#main.composed-detail.layout-editorial .gallery-bakery .image-zoom>img{max-height:750px}
+#main.composed-detail.layout-observation .image-zoom>img{max-height:800px}
+.design-type-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:32px 0 5px}
+.design-type-tabs button{background:transparent;border:1px solid #42574866;color:#8fa896;font-size:10px;line-height:1.5;padding:9px 13px;transition:background .25s,border-color .25s,color .25s}
+.design-type-tabs button small{font-family:var(--display);font-size:7px;color:#688a74;margin-left:10px}
+.design-type-tabs button.selected{background:#1b2d20;border-color:#7d9b86;color:#e0e9dc}
+.design-type-tabs button:hover{border-color:#7d9b86;color:#dce8da}
+.design-type-tabs+ .fragment-collection .arrange-toolbar{margin-top:20px}
+.profile-portrait,.about-portrait{display:block;margin:25px 0 0;padding:0;border:0;background:transparent;box-shadow:none;width:100%;max-width:330px}
+.profile-portrait img,.about-portrait img{display:block;width:100%;height:auto;object-fit:contain;filter:none;opacity:1;background:transparent;border:0;box-shadow:none}
+.profile-identity{padding-right:0;min-height:0}
+.profile-portrait{max-width:310px;margin-top:20px}
+.about-portrait{align-self:start;justify-self:center;max-width:380px;margin:0}
+@media(max-width:680px){
+ .design-type-tabs{gap:7px;margin:24px 0 0}
+ .design-type-tabs button{font-size:9px;padding:8px 10px}
+ .design-type-tabs button small{font-size:6px;margin-left:7px}
+ .profile-identity{padding:0;min-height:0;display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:0 18px}
+ .profile-identity .signature{grid-column:1;grid-row:1;align-self:end;margin:15px 0 15px;font-size:55px}
+ .profile-identity h2{grid-column:1;grid-row:2;font-size:19px;line-height:1.5}
+ .profile-identity>p{grid-column:1;grid-row:3;font-size:9px;line-height:1.7;align-self:start}
+ .profile-identity .profile-portrait{grid-column:2;grid-row:1/5;width:100%;margin:0;max-width:none;align-self:end}
+ .profile-information{margin-top:10px}
+ .about-portrait{max-width:240px;justify-self:start}
+ #main.composed-detail .image-zoom>img{max-height:800px}
+ #main.composed-detail .chapter-images .image-zoom>img{max-height:500px}
+ #main.composed-detail .chapter-images.images-3 .image-zoom>img{height:auto;max-height:420px}
+ #main.composed-detail .chapter-images.images-2 .image-zoom>img{height:auto;max-height:430px}
+ #main.composed-detail.layout-campaign .composed-gallery .image-zoom>img,#main.composed-detail.layout-packaging .composed-gallery .image-zoom>img{max-height:none}
+}
+/* Biographies: an open composition, with the cutout resting on the slide edge. */
+.home-profile{position:relative;display:block;min-height:790px;padding:55px 53% 55px 7%;overflow:hidden}
+.home-profile .profile-identity{display:block;position:static;min-height:0;padding:0}
+.home-profile .signature{font-size:68px;margin:0 0 10px}
+.home-profile .profile-information{margin-top:30px;position:relative;z-index:1}
+.home-profile .profile-information h3{font-size:30px;margin:12px 0 18px}
+.home-profile .profile-background{grid-template-columns:1fr 1fr;gap:22px;margin-top:22px;padding-top:18px}
+.home-profile>.profile-portrait{position:absolute;right:2%;bottom:0;width:47%;height:92%;max-width:none;margin:0;pointer-events:none}
+.home-profile>.profile-portrait img{width:100%;height:100%;max-width:none;object-fit:contain;object-position:center bottom}
+.about-page{position:relative;min-height:850px;padding:35px 51% 65px 0;overflow:hidden}
+.about-page h1{font-size:clamp(48px,6vw,88px);margin-bottom:35px;letter-spacing:-2px}
+.about-page>.eyebrow{margin-top:45px}
+.about-page .about-columns{display:block}
+.about-page>.about-portrait{position:absolute;right:0;bottom:0;width:47%;height:88%;max-width:none;margin:0;pointer-events:none}
+.about-page>.about-portrait img{width:100%;height:100%;max-width:none;object-fit:contain;object-position:center bottom}
+/* Camera print pieces receive two separate, complete presentation sections. */
+#main.composed-detail .ticket-slide,#main.composed-detail .leaflet-slide{min-height:75svh;padding:55px 0 35px;margin-bottom:75px;display:flex;flex-direction:column;justify-content:center}
+#main.composed-detail .ticket-slide .chapter-images{display:grid;grid-template-columns:1fr;width:100%}
+#main.composed-detail .ticket-slide .image-zoom{width:100%}
+#main.composed-detail .ticket-slide .image-zoom>img{width:100%;height:auto;max-height:70svh;object-fit:contain}
+#main.composed-detail .leaflet-slide .chapter-images{display:grid;grid-template-columns:.65fr 1.35fr;align-items:center;gap:5%;width:100%}
+#main.composed-detail .leaflet-slide .chapter-images>figure{width:100%;margin:0;min-width:0}
+#main.composed-detail .leaflet-slide .image-zoom{width:100%}
+#main.composed-detail .leaflet-slide .image-zoom>img{width:100%;height:auto;max-height:65svh;object-fit:contain}
+@media(max-width:900px) and (min-width:681px){
+ .home-profile{padding-right:51%;padding-left:5%;min-height:850px}
+ .home-profile .profile-background{grid-template-columns:1fr;gap:8px}
+ .home-profile .keyword-row>span{font-size:21px}
+ .about-page{min-height:900px}
+}
+@media(max-width:680px){
+ .home-profile{padding:38px 6% 0;min-height:0}
+ .home-profile .profile-identity{display:block}
+ .home-profile .signature{font-size:60px}
+ .home-profile .profile-information{margin-top:26px}
+ .home-profile .profile-background{grid-template-columns:1fr 1fr;gap:16px}
+ .home-profile>.profile-portrait{position:relative;right:auto;bottom:auto;width:85%;height:auto;margin:25px -6.8% 0 auto}
+ .home-profile>.profile-portrait img{height:auto}
+ .about-page{padding:30px 0 0;min-height:0;overflow:hidden}
+ .about-page h1{font-size:55px}
+ .about-page>.about-portrait{position:relative;right:auto;bottom:auto;width:85%;height:auto;margin:30px 0 0 auto}
+ .about-page>.about-portrait img{height:auto}
+ #main.composed-detail .ticket-slide,#main.composed-detail .leaflet-slide{min-height:0;padding:25px 0;margin-bottom:40px}
+ #main.composed-detail .leaflet-slide .chapter-images{grid-template-columns:.7fr 1.3fr;gap:12px}
+ #main.composed-detail .ticket-slide .image-zoom>img,#main.composed-detail .leaflet-slide .image-zoom>img{max-height:none;min-height:0;height:auto}
+}
+/* Native-resolution film stills remain complete, including their subtitles. */
+.ai-editorial .storyboard-mosaic{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:24px}
+.ai-editorial .storyboard-mosaic>figure,.ai-editorial .storyboard-mosaic>figure:first-child{grid-row:auto;height:auto;margin:0}
+.ai-editorial .storyboard-mosaic>figure:nth-child(2){margin-top:65px}
+.ai-editorial .storyboard-mosaic>figure:nth-child(3){margin-top:125px}
+.ai-editorial .storyboard-mosaic .image-zoom{height:auto;background:transparent;overflow:visible}
+.ai-editorial .storyboard-mosaic .image-zoom img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;padding:0}
+.ai-editorial .storyboard-mosaic figcaption{font-size:12px;line-height:1.6;letter-spacing:.2px}
+.ai-editorial .episode-cover img{height:auto;width:100%;aspect-ratio:9/16;object-fit:contain;background:transparent}
+.ai-editorial .episode-cover{border:0;background:transparent}
+.ai-editorial .episode-cover>strong{font-size:14px;margin-inline:0;line-height:1.6}
+.ai-editorial .episode-cover>small,.ai-editorial .episode-cover>span{font-size:12px;margin-inline:0}
+.series-analysis{margin:85px 5% 60px}
+.analysis-heading{max-width:780px;margin-bottom:38px}
+.series-analysis .eyebrow{font-size:12px;letter-spacing:1px;line-height:1.7;color:#93aa9a}
+.analysis-heading h2{font-family:var(--serif);font-size:clamp(28px,3vw,43px);font-weight:400;line-height:1.6;margin:18px 0 25px}
+.series-analysis p:not(.eyebrow){font-size:16px;line-height:1.95;color:#aebcb2;margin:0}
+.analysis-decisions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;padding:25px 0 50px}
+.series-analysis h3{font-size:20px;line-height:1.65;font-weight:400;margin:0 0 16px;color:#e0e6dd}
+.analysis-decisions article{border-top:1px solid var(--line);padding-top:24px}
+.episode-reading{margin:35px 0 70px}
+.episode-reading>article{display:grid;grid-template-columns:minmax(180px,.65fr) minmax(0,1.35fr);gap:8%;align-items:center;margin:40px 0 60px}
+.episode-reading>article:nth-of-type(even){grid-template-columns:minmax(0,1.35fr) minmax(180px,.65fr)}
+.episode-reading>article:nth-of-type(even)>.image-zoom{order:2}
+.episode-reading .image-zoom{width:100%;max-width:350px;background:transparent;justify-self:center;padding:0;border:0}
+.episode-reading .image-zoom img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;padding:0}
+.episode-reading .underlined{font-size:14px;margin-top:18px}
+.series-production{padding:35px 0;border-top:1px solid var(--line)}
+.series-production>div{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:35px}
+.series-production article>span{font-size:14px;color:#98b6a0}
+.series-production h4{font-size:18px;font-weight:400;line-height:1.7;margin:12px 0}
+@media(max-width:900px){.analysis-decisions{grid-template-columns:1fr;gap:24px}.series-production>div{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){
+ .ai-editorial .storyboard-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+ .ai-editorial .storyboard-mosaic>figure:first-child{grid-column:1/-1;width:70%;justify-self:center}
+ .ai-editorial .storyboard-mosaic>figure:nth-child(2),.ai-editorial .storyboard-mosaic>figure:nth-child(3){margin:0}
+ .series-analysis{margin:55px 5% 35px}
+ .analysis-heading h2{font-size:28px}
+ .episode-reading>article,.episode-reading>article:nth-of-type(even){grid-template-columns:1fr;gap:25px;margin-bottom:50px}
+ .episode-reading>article:nth-of-type(even)>.image-zoom{order:0}
+ .episode-reading .image-zoom{max-width:280px}
+ .series-production>div{grid-template-columns:1fr;gap:30px}
+}
+/* AOZORA: finished portrait poster first, exploratory studies in the narrative below. */
+#main.composed-detail.layout-editorial .composed-gallery .gallery-bakery:first-child{max-width:860px;width:100%;justify-self:center}
+#main.composed-detail.layout-editorial .gallery-bakery:first-child .image-zoom{width:100%}
+#main.composed-detail.layout-editorial .gallery-bakery:first-child .image-zoom>img{width:100%;height:auto;max-height:none;object-fit:contain;padding:0}
